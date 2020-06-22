@@ -7,4 +7,6 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "prettier-ref";
+  app = "yess";
+  app2 = "yess";
 }
