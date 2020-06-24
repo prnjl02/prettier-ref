@@ -21,14 +21,13 @@
     "@angular/platform-browser": "~9.0.0",
     "@angular/platform-browser-dynamic": "~9.0.0",
     "@angular/router": "~9.0.0",
-    "prettier": "^2.0.5",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
   "lint-stage": {
     "*.{ts,js,css,json}": [
-      "./node_modules/.bin/prettier --single-quote --write",
+      "node_modules/.bin/prettier --single-quote --write",
       "git add"
     ]
   },
@@ -50,6 +49,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
     "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
