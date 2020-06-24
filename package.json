@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "prettier": "./node_modules/.bin/prettier --single-quote --write './src/**/*.{ts,js,css,josn}'",
-    "precommit": "lint-staged"
+    "pre-commit": "lint-staged"
   },
   "private": true,
   "dependencies": {
