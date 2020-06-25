@@ -9,4 +9,5 @@ export class AppComponent {
   title = "prettier-ref"
   app = "yess"
   name = "pranjal"
+  lName = "verma"
 }
