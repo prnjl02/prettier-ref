@@ -10,4 +10,5 @@ export class AppComponent {
   app = "yess"
   name = "pranjal"
   lName = "verma"
+  id = 98
 }
