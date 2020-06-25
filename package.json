@@ -8,13 +8,15 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "pre-commit": "lint-staged"
+    "prettify": "prettier src/*.js --write"
   },
-  "pre-commit": [
-    "pre-commit"
-  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "*.js": [
+    "*.(js|html|css)": [
       "prettier --write",
       "git add"
     ]
@@ -29,15 +31,10 @@
     "@angular/platform-browser": "~9.0.0",
     "@angular/platform-browser-dynamic": "~9.0.0",
     "@angular/router": "~9.0.0",
+    "eslint": "^7.3.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
-  },
-  "lint-stage": {
-    "*.{ts,js,css,json}": [
-      "node_modules/.bin/prettier --single-quote --write",
-      "git add"
-    ]
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.1",
